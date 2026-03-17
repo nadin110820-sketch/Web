@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #caa;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+}
+
+nav a {
+    margin: 0 10px;
+    color: black;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a:visited {
+    color: purple;
+}
+
+nav a:active {
+    color: red;
+}
+
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-block img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.caption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background-color: #f8d7da;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.films {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.films li {
+    padding: 8px;
+}
+
+.films li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.films li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.films li:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.films .special {
+    background-color: #ffe082;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #eee;
+}
+
+
+
+
+
