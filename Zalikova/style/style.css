@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1d1d1d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+    background-image: url("../images/Frame.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.desc {
+    max-width: 500px;
+    font-size: 14px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.featured, .more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    gap: 40px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    gap: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.old {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 10px;
+    border-top: 1px solid #eee;
+    color: #777;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
