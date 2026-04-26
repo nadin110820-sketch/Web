@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+.main-wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    column-gap: 350px;
+    background: rgba(15, 23, 42, 0.79);
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.brand-logo span {
+    color: #357cea;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    color: #51c3ff;
+    font-size: 4rem;
+}
+
+.subtitle {
+    color: #8e909f;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.chat-btn {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    bottom: 25px;
+    right: 25px;
+    background: #2b7eff;
+    border-radius: 50%;
+    border: none;
+}
+
+.main-icon {
+    color: #122341;
+    position: relative;
+    left: 1000px;
+    bottom: 100px;
+}
+
+h2 {
+    background: #0f172a;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(29, 42, 61);
+    position: sticky;
+    top: 100px;
+}
+
+.cards-row {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.card-item {
+    padding: 15px;
+    background: #1d2a3d;
+    border-radius: 10px;
+    border: 1px solid rgb(75, 92, 122);
+}
+
+.tech-list {
+    margin: 20px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.tech-list p {
+    border-radius: 5px;
+    color: #7aacdd;
+    padding: 5px;
+    border: 1px solid #4c8bea;
+    background: #26354a;
+}
+
+.tag-front {
+    background: #fc2b36;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.tag-back {
+    background: #00c94f;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.tag-cyber {
+    background: #2b7efe;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.section-offset {
+    margin-top: 100px;
+}
+
+.why-grid {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.why-card {
+    padding: 25px;
+    background: #141f33;
+    border-radius: 10px;
+    border: 1px solid rgb(53, 75, 113);
+    flex: 1;
+}
+
+.roadmap-list {
+    margin: 20px 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.road-card {
+    background: #1d2a3d;
+    border-radius: 10px;
+    border: 1px solid rgb(53, 75, 113);
+    padding: 5px 50px;
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    left: 430px;
+    width: 18px;
+    height: 18px;
+    background: #2b7fff;
+    border: 4px solid #0f172a;
+    border-radius: 50%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
