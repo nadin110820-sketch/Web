@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: #0f172a;
+    color: #fff;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(15,23,42,0.96);
+    border-bottom: 1px solid #22304a;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo span{
+    color: #307ef6;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cad5e3;
+    font-size: 1rem;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+}
+
+.hero-section{
+    padding: 120px 0 120px 0;
+}
+
+.hero-content{
+    position: relative;
+}
+
+.hero-content h1{
+    font-size: 3.75rem;
+    color: #307ef6;
+    line-height: 1;
+    margin: 20px;
+}
+
+.hero-content p{
+    color: #cad5e3;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    max-width: 650px;
+}
+
+.code-icon{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #132442;
+}
+
+.career-section, .benefits-section, .roadmap-section{
+    padding: 60px 0;
+}
+
+.section-title{
+    position: sticky;
+    top: 60px;
+    z-index: 20;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 25px 0 15px 0;
+    border-bottom: 1px solid #22304a;
+    margin-bottom: 30px;
+}
+
+.career-section{
+    position: relative;
+    overflow: hidden;
+    min-height: 235px;
+    padding: 22px 25px;
+    background: #1d2a3d;
+    border: 1px solid #334966;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s ease;
+}
+
+.career-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(#1d2a3d,#334966);
+    transition: opacity 0.3s ease;
+}
+
+.career-card:hover::before{
+    opacity: 1;
+}
+
+.career-card:hover{
+    transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
