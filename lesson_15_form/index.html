@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Форма прийому на роботу</h1>
+    <p class="subtitle">IT компанія "TechInnovate"</p>
+    <p class="note">Поля позначені синьою лінією є обов'язковими для заповнення</p>
+
+    <form>
+
+        <div class="section">
+            <h2>Персональні дані</h2>
+
+            <div class="row">
+                <div class="field">
+                    <label>Ім'я *</label>
+                    <input type="text" placeholder="Введіть ваше ім'я" required>
+                </div>
+                <div class="field">
+                    <label>Прізвище *</label>
+                    <input type="text" placeholder="Введіть ваше прізвище" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Email *</label>
+                    <input type="email" placeholder="example@email.com" required>
+                </div>
+                <div class="field">
+                    <label>Телефон *</label>
+                    <input type="tel" placeholder="+380 XX XXX XX XX" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="section purple">
+            <h2>Професійна інформація</h2>
+
+            <div class="row">
+                <div class="field">
+                    <label>Бажана позиція *</label>
+                    <select required>
+                        <option>Оберіть позицію</option>
+                        <option>Frontend Developer</option>
+                        <option>Backend Developer</option>
+                        <option>Full Stack Developer</option>
+                        <option>DevOps Engineer</option>
+                        <option>QA Engineer</option>
+                        <option>UI/UX Designer</option>
+                        <option>Mobile Scientists</option>
+                        <option>Data Scientists</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Досвід роботи (років) *</label>
+                    <input type="number" min="0" max="50">
+                </div>
+            </div>
+
+            <div class="field full">
+                <label>Технології та навички *</label>
+                <input type="text" placeholder="React, TypeScript, Node.js, Python..." required>
+            </div>
+        </div>
+
+        <div class="section pink">
+            <h2>Додаткова інформація</h2>
+
+            <div class="row">
+                <div class="field">
+                    <label>GitHub профіль</label>
+                    <input type="text" placeholder="https://github.com/username" required>
+                </div>
+                <div class="field">
+                    <label>Портфоліо</label>
+                    <input type="text" placeholder="https://yourportfolio.com" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Резюме (PDF, DOC) *</label>
+                    <input type="email" placeholder="Choose File" required>
+                </div>
+                <div class="field">
+                    <label>Коротко про себе *</label>
+                    <input type="tel" placeholder="Розкажіть про свій досвід, мотивацію та чому ви хочете приєднатися до нашої команди... (мінімум 50 символів)" required>
+                </div>
+            </div>
+        </div>
