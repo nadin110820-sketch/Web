@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма прийому на роботу</title>
+<!--    <link rel="stylesheet" href="style/normalize.css">-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <div class="container">
+
+        <h1>Форма прийому на роботу</h1>
+        <p class="subtitle">IT Компанія "TechInnovate"</p>
+        <p class="note">Поля позначені синьою лінією є обов'язковими для заповнення</p>
+
+        <form>
+
+            <div class="section blue">
+                <h2>Персональні дані</h2>
+
+                <div class="row">
+                    <div class="field required">
+                        <label>Ім'я *</label>
+                        <input type="text" placeholder="Введіть ваше ім'я" required>
+                    </div>
+
+                    <div class="field required">
+                        <label>Прізвище *</label>
+                        <input type="text" placeholder="Введіть ваше прізвище" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field required">
+                        <label>Email *</label>
+                        <input type="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="field required">
+                        <label>Телефон *</label>
+                        <input type="tel" placeholder="+380 XX XXX XX XX" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section purple">
+                <h2>Професійна інформація</h2>
+
+                <div class="row">
+                    <div class="field required">
+                        <label>Бажана позиція *</label>
+                        <select required>
+                            <option value="">Оберіть позицію</option>
+                            <option>Frontend Developer</option>
+                            <option>Backend Developer</option>
+                            <option>Full Stack Developer</option>
+                            <option>DevOps Engineer</option>
+                            <option>QA Engineer</option>
+                            <option>UI/UX Designer</option>
+                            <option>Mobile Developer</option>
+                            <option>Data Scientist</option>
+                        </select>
+                    </div>
+
+                    <div class="field required">
+                        <label>Досвід роботи (років) *</label>
+                        <input type="number" min="0" max="50" placeholder="0-50" required>
+                    </div>
+                </div>
+
+                <div class="field full required">
+                    <label>Технології та навички *</label>
+                    <input type="text" placeholder="React, TypeScript, Node.js, Python..." required>
+                </div>
+            </div>
+
+            <div class="section pink">
+                <h2>Додаткова інформація</h2>
+
+                <div class="row">
+                    <div class="field">
+                        <label>GitHub профіль</label>
+                        <input type="url" placeholder="https://github.com/username">
+                    </div>
+
+                    <div class="field">
+                        <label>Портфоліо</label>
+                        <input type="url" placeholder="https://yourportfolio.com">
+                    </div>
+                </div>
+
+                <div class="field full required">
+                    <label>Резюме (PDF, DOC) *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <div class="field full required">
+                    <label>Коротко про себе *</label>
+                    <textarea minlength="50" placeholder="Розкажіть про свій досвід..." required></textarea>
+                </div>
+            </div>
+
+            <div class="agree">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">
+                    Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною *
+                </label>
+            </div>
+
+            <button type="submit">Надіслати заявку</button>
+
+            <div class="footer">
+                <h3>💡 Підказки по заповненню:</h3>
+                <p>✓ Зелена рамка — поле заповнено правильно</p>
+                <p>✗ Червона рамка — поле заповнено неправильно</p>
+                <p>→ Синя лінія зліва — обов'язкове поле</p>
+                <p>↗ Наведіть курсор на поле для ефекту підсвічування</p>
+            </div>
+
+        </form>
+
+    </div>
+</main>
+
+</body>
+</html>
