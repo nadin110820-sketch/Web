@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*:root{*/
+/*    --primary: #3459db0;*/
+/*    --accent: #83ea53;*/
+/*    --transition-speed: 0.5s;*/
+/*    --timimg-bounce: cubic-bezier(0.2, 0.2, 0.2, 1);*/
+/*}*/
+
+/*.card{*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    background: var(--accent);*/
+/*    transition: transform var(--transition-speed); var(--timimg-bounce) ease-in-out;*/
+/*}*/
+
+/*.card:hover{*/
+/*    transform: scale(1.2) rotate(45deg);*/
+/*    background: var(--accent);*/
+/*}*/
+
+/*@keyframes moveLight{*/
+/*    0% {top: 0; left:0; opacity: 0;}*/
+/*    25% {opacity: 1;}*/
+/*    50% {top: 80%; left:50% ; scale: 1.5;}*/
+/*    100% {top: 0; left:0; opacity: 0;}*/
+/*}*/
+
+/*.light{*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    background: var(--primary);*/
+/*    position: absolute;*/
+/*    animation: moveLight .5s;*/
+/*}*/
+
+:root{
+    --bg-card: #1a1a1a;
+    --light-color: #ccccac;
+    --speed: 0,5s;
+}
+
+.card{
+    width: 250px;
+    height: 350px;
+    background: var(--bg-card);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: tramsform var(--speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover{
+    transform: translateY(-2px) scale(1);
+    cursor: pointer;
+}
+
+.light{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--light-color);
+    filter: blur(10px);
+    border-radius: 10px;
+    animation: animation-light 8s infinite;
+}
+
+@keyframes animation-light{
+    0%{top: -20%; left: -20%;}
+    50%{top: 60%; left: 70%; background: #baba96}
+    100%{top: 30%; left: 10%; background: #78783b
+    }
+}
